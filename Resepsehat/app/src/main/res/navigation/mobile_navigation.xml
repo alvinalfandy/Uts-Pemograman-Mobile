@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/navigation_home">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.resep_sehat.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+        <!-- Make sure we handle navigation back from the HomeFragment -->
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <!-- Dashboard Fragment -->
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.resep_sehat.ui.dashboard.DashboardFragment"
+        android:label="@string/favorite"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <!-- Notifications Fragment (Tambah Resep) -->
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.resep_sehat.ui.notifications.NotificationsFragment"
+        android:label="@string/tambah_resep"
+        tools:layout="@layout/fragment_notifications" />
+
+    <!-- Detail Fragment -->
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.example.resep_sehat.ui.detail.DetailFragment"
+        android:label="@string/title_detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="RECIPE_ID"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <!-- Recipe Fragment (Daftar Resep) -->
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.example.resep_sehat.RecipeFragment"
+        android:label="Recipe Fragment"
+        tools:layout="@layout/fragment_recipes" />
+</navigation>

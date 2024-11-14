@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <!-- Preview Image -->
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@android:color/darker_gray"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_preview">
+
+        <!-- LinearLayout to contain all input fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Input fields -->
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Resep" />
+
+            <EditText
+                android:id="@+id/edit_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Deskripsi" />
+
+            <EditText
+                android:id="@+id/edit_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bahan-bahan (pisahkan dengan koma)" />
+
+            <EditText
+                android:id="@+id/edit_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Langkah-langkah" />
+
+            <EditText
+                android:id="@+id/edit_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Durasi (misalnya: 30 menit)" />
+
+            <!-- New fields for Category, Calories, Rating -->
+            <EditText
+                android:id="@+id/edit_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kategori" />
+
+            <EditText
+                android:id="@+id/edit_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kalori" />
+
+            <EditText
+                android:id="@+id/edit_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rating" />
+
+            <!-- Image and Save buttons -->
+            <Button
+                android:id="@+id/button_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Gambar"
+                android:backgroundTint="#669900" />
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan Resep"
+                android:backgroundTint="#669900" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

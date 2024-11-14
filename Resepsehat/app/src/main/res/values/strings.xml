@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Resep-sehat</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_detail">title_detail</string>
+    <string name="favorite">favorite</string>
+    <string name="tambah">Tambah</string>
+    <string name="tambah_resep">Tambah Resep</string>
+
+    <!-- Tambahkan string untuk deskripsi gambar di DetailFragment -->
+    <string name="detail_image_description">Detail image of the recipe</string>
+</resources>
