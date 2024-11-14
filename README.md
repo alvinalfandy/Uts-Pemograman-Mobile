@@ -58,7 +58,8 @@
    - **Daftar Favorit**: Akses koleksi resep favorit Anda kapan saja.
 
 ### 3. **Detail Resep**
-![alt text](gambar/image-5.png)
+![image](https://github.com/user-attachments/assets/0f1ce282-0bb3-4287-886d-44585df047ba)
+
    Halaman detail ini memberikan informasi lengkap tentang bahan-bahan dan langkah-langkah pembuatan.
 
    - **Deskripsi Resep**: Informasi lengkap mengenai bahan dan langkah pembuatan.
