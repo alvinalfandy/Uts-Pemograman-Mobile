@@ -44,7 +44,7 @@
 # 📱 Fitur-Fitur Aplikasi
 
 ### 1. **Beranda**
- ![alt text](gambar/image-2.png)
+ ![alt text](gambar/image.png)
    Halaman beranda berfungsi sebagai pengantar bagi pengguna untuk mulai menjelajahi resep yang tersedia, dengan tampilan yang menarik dan navigasi intuitif.
 
    - **Navigasi Mudah**: Akses cepat ke resep-resep sehat.
