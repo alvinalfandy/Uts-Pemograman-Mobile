@@ -1,4 +1,5 @@
-# 🍲 Resep Sehat - Aplikasi Android untuk Hidup Lebih Sehat
+#Uts Pemogramanan Mobile
+# 🍲 Resep Sehat 
 
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Android_logo_2019.png" alt="Android Logo" width="80" height="80">
